@@ -70,7 +70,7 @@ public class MoviesResource {
     public String getMovieCount(){
         return "{\"count\":"+FACADE.getCount()+"}";
     }
-     
+    
     @Path("{id}")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
