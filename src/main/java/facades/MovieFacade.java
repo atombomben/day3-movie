@@ -59,7 +59,7 @@ public class MovieFacade {
     public long getRenameMeCount(){
         EntityManager em = emf.createEntityManager();
         try{
-            long renameMeCount = (long)em.createQuery("SELECT COUNT(r) FROM RenameMe r").getSingleResult();
+            long renameMeCount = (long)em.createQuery("SELECT COUNT(r) FROM Movie r").getSingleResult();
             return renameMeCount;
         }finally{  
             em.close();

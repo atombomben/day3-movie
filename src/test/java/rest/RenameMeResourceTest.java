@@ -68,7 +68,7 @@ public class RenameMeResourceTest {
         r2 = new Movie("aaa", "bbb");
         try {
             em.getTransaction().begin();
-            em.createNamedQuery("RenameMe.deleteAllRows").executeUpdate();
+            em.createNamedQuery("Movie.deleteAllRows").executeUpdate();
             em.persist(r1);
             em.persist(r2);
             em.getTransaction().commit();
