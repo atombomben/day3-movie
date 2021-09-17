@@ -42,7 +42,6 @@ public class MoviesResource {
     }
     
     private final EntityManagerFactory EMF = EMF_Creator.createEntityManagerFactory();
-       
     private final RealMovieFacade FACADE =  RealMovieFacade.getRealMovieFacade(EMF);
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
