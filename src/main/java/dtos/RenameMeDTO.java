@@ -5,7 +5,7 @@
  */
 package dtos;
 
-import entities.RenameMe;
+import entities.Movie;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,14 +23,14 @@ public class RenameMeDTO {
         this.str2 = dummyStr2;
     }
     
-    public static List<RenameMeDTO> getDtos(List<RenameMe> rms){
+    public static List<RenameMeDTO> getDtos(List<Movie> rms){
         List<RenameMeDTO> rmdtos = new ArrayList();
         rms.forEach(rm->rmdtos.add(new RenameMeDTO(rm)));
         return rmdtos;
     }
 
 
-    public RenameMeDTO(RenameMe rm) {
+    public RenameMeDTO(Movie rm) {
         if(rm.getId() != null)
             this.id = rm.getId();
         this.str1 = rm.getDummyStr1();
