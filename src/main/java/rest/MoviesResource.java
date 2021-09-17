@@ -103,8 +103,5 @@ public class MoviesResource {
         RealMovieDTO rmvDTO = gson.fromJson(movie, RealMovieDTO.class);
         rmvDTO = FACADE.create(rmvDTO);
         return gson.toJson(rmvDTO);
-    }
-
-
-    
+    }    
 }
